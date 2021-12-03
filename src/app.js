@@ -13,7 +13,6 @@ app.get('/cowsay', (req, res) => {
         })
     }
 
-    console.log('Text received: ' + text)
     res.send(cowsay.say({
         text,
         e: "O O",
@@ -25,8 +24,3 @@ app.get('/cowsay', (req, res) => {
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
-// console.log(cowsay.say({
-//     text: "I am a cow",
-//     e: "O O",
-//     T: "U"
-// }))
